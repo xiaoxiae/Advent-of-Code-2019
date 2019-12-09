@@ -26,7 +26,7 @@ def check_condition(number: int) -> str:
 
 
 total = 0
-for i in range(134792, 675811):
+for i in range(*map(int, open("04.in", "r").read().strip().split(","))):
     if check_condition(i):
         total += 1
 
